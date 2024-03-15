@@ -1,38 +1,116 @@
+/* App-wide styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #a0e8af; /* Updated to pastel cyan */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
 .App {
+  width: 800px;
+  background-color: #FFF3F0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+
+.header {
+  background-color: #2D2D72; /* Deep blue/purple, complementing the neon text */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive; /* Apply the Press Start 2P font */
+}
+
+.header h1 {
+  color: #FF69B4; /* Hot Pink */
+  text-shadow: 0 0 5px #FF69B4, 0 0 15px #FF69B4, 0 0 30px #FF69B4; /* Enhanced neon glow effect */
+  margin: 0;
+}
+
+.header p {
+  color: #FFFFFF; /* For contrast against the dark background */
+}
+
+
+/* Body styles */
+.body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address, .contact {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* Light separator */
+}
+
+@keyframes blinker {
+  0% { opacity: 1; }
+  66% { opacity: 1; } /* Keep the text on for 2/3 of the time */
+  100% { opacity: 0; } /* And off for 1/3 of the time */
+}
+
+.blinking {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  animation: blinker 1.5s linear infinite;
+  color: #FF0000; /* Or any color you've chosen */
+}
+
+
+.book-now {
+  background-color: #E0FFFF; /* Light shade for div box */
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.thumbnails {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  gap: 40px; /* Increased to 20px for more space between thumbnails */
+  flex-wrap: wrap; /* Allows thumbnails to wrap in smaller screens */
 }
 
-.App-link {
-  color: #61dafb;
+.thumbnails img {
+  width: 64px; /* Set width */
+  height: 64px; /* Set height */
+  object-fit: cover; /* Ensures the image covers the area, useful if your images are not square */
+  border-radius: 4px; /* Optional: adds a slight rounding to the corners for a softer look */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 7px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
   }
 }

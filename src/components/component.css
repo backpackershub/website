@@ -1,0 +1,54 @@
+/* Body.css */
+/* Body.css */
+.body {
+  margin-top: 125px; /* Header height plus 5px gap */
+  background-color: #f0e6f7; /* Light pastel color for the body */
+  padding: 20px;
+  width: 90%;
+  max-width: 600px; /* Ensures body matches header width */
+  margin: 125px auto 0; /* Adjust top margin to account for header height + 5px gap */
+}
+
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Assuming .availability is a div or section itself */
+.availability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+  font-weight: bold;
+  color: #FF0000; /* Red text */
+  animation: blinker 1s linear infinite;
+  font-size: 25px;
+  width: 100%;
+}
+
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.book-now {
+  margin-top: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.thumbnail {
+  display: block;
+  width: 60px; /* Thumbnail size */
+  height: 60px; /* Thumbnail size */
+  background-color: #FFF;
+  line-height: 60px; /* Vertically center placeholder text */
+  text-align: center;
+  border: 2px solid #000;
+}
