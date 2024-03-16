@@ -15,23 +15,33 @@ body {
 .App {
   width: 800px;
   background-color: #FFF3F0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0px #ff99cc; /* Solid pastel pink drop shadow */
   margin: auto;
+  border: 4px solid black; /* Black solid border */
 }
 
 
 .header {
-  background-color: #2D2D72; /* Deep blue/purple, complementing the neon text */
+  background-color: #FFD700;
   padding: 20px 0;
   text-align: center;
   font-family: 'Press Start 2P', cursive; /* Apply the Press Start 2P font */
+  border: 2px solid black; /* Black solid border for the header */
 }
 
 .header h1 {
-  color: #FF69B4; /* Hot Pink */
-  text-shadow: 0 0 5px #FF69B4, 0 0 15px #FF69B4, 0 0 30px #FF69B4; /* Enhanced neon glow effect */
+  color: #FF4500; /* Vivid red shade */
+  text-shadow: 0 0 3px #FF6347, 0 0 5px #FF6347; /* Reduced blur and intensity */
   margin: 0;
 }
+
+.header h2 {
+  color: #FFFFFF; /* White text */
+  text-align: center; /* Centers the text if desired */
+  font-size: 1.2em; /* Adjusts the size; modify as needed */
+  margin: 10px 0; /* Provides some space above and below */
+}
+
 
 .header p {
   color: #FFFFFF; /* For contrast against the dark background */
@@ -51,11 +61,20 @@ body {
   justify-content: space-between;
 }
 
-.address, .contact {
+.contact {
   font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
+  font-size: 23px;
   color: #333;
   font-weight: bold;
+  line-height: .7; /* Reduced line spacing */
+}
+
+.address {
+  font-family: 'Roboto Mono', monospace; /* Assuming you're using Roboto Mono for address */
+  color: #333;
+  line-height: .7; /* Reduced line spacing */
+  font-weight: bold;
+  font-size: 18px; 
 }
 
 hr {

@@ -9,6 +9,10 @@
   margin: 125px auto 0; /* Adjust top margin to account for header height + 5px gap */
 }
 
+.sub {
+  font-size: 25px;
+}
+
 
 .contact-info {
   display: flex;
